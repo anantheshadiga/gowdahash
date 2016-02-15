@@ -15,6 +15,7 @@ $ brew install maven
 In ubuntu
 ```bash
 $ apt-get install maven
+```
 
 ### Building the project
 use following command

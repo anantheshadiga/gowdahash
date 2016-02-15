@@ -25,6 +25,10 @@ public class SortedHashMap implements Map {
         return sortedList.size();
     }
 
+    private void delete(int position) {
+        sortedList.remove(position);
+    }
+
     /**
      * Performs the binary search and returns the results
      * @param key
@@ -93,6 +97,10 @@ public class SortedHashMap implements Map {
      * @return void
      */
     public void delete(String key) {
-
+        int position = search(key);
+        if(position < 0) {
+            return;
+        }
+        delete(position);
     }
 }
